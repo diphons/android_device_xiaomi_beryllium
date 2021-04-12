@@ -9,3 +9,8 @@ vendor.hw.fm.init=0
 
 # USB
 vendor.usb.product_string=Xiaomi Pocophone F1
+
+# Kernel 4.19 - Encryption
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+ro.crypto.volume.filenames_mode=aes-256-cts
