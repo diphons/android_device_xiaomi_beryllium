@@ -97,6 +97,7 @@
 
         <activity
             android:name=".TileEntryActivity"
+            android:exported="false"
             android:label="@string/deviceparts_label"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
@@ -106,6 +107,7 @@
 
         <service
             android:name=".thermal.ThermalTileService"
+            android:exported="false"
             android:icon="@drawable/ic_thermal"
             android:label="@string/thermal_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
@@ -117,6 +119,7 @@
 
         <activity
             android:name=".speaker.ClearSpeakerActivity" 
+            android:exported="false"
             android:label="@string/clear_speaker_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
