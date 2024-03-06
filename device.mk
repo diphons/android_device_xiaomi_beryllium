@@ -403,10 +403,8 @@ $(call inherit-product, vendor/xiaomi/beryllium/beryllium-vendor.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service
-    
-PRODUCT_COPY_FILES += \
-    vendor/qcom/opensource/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+    android.hardware.vibrator@1.0-impl:64 \
+    android.hardware.vibrator@1.0-service
 
 # VNDK
 PRODUCT_COPY_FILES += \
