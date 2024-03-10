@@ -1,0 +1,8 @@
+#!/bin/sh
+
+dirm=$PWD
+get_dirm=${dirm##*/}
+dir_initial=$(echo $dirm | sed "s/\/$get_dirm//g")
+cd $dir_initial
+. main
+
