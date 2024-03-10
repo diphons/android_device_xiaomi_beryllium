@@ -449,15 +449,11 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    TargetWifiOverlay
-
-# WiFi
-PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     libwifi-hal-qcom \
     libwpa_client \
-    WifiOverlay \
+    TargetWifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 
