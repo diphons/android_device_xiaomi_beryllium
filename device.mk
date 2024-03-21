@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-afterlife
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -33,6 +33,18 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
+
+# Disable/Enable Blur Support, default is false
+TARGET_SUPPORTS_BLUR := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Afterlife
+AFTERLIFE_MAINTAINER := de8ug
+
+# afterlife
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+AFTERLIFE_EXTRA := true
 
 # Inherit from sdm845-common
 $(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
