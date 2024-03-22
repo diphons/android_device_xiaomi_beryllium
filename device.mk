@@ -256,7 +256,7 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-afterlife
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay
@@ -395,6 +395,18 @@ PRODUCT_PACKAGES += \
 
 # Treble
 PRODUCT_USE_VNDK_OVERRIDE := true
+
+# Disable/Enable Blur Support, default is false
+TARGET_SUPPORTS_BLUR := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# Afterlife
+AFTERLIFE_MAINTAINER := de8ug
+
+# afterlife
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+AFTERLIFE_EXTRA := true
 
 # USB
 PRODUCT_PACKAGES += \
